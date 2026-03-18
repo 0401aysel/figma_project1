@@ -2,7 +2,9 @@ const Header =`
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="/images/logo.png">
+                <a href="/">
+                    <img src="/images/logo.png">
+                </a>
             </div>
             <ul class="menu">
                 <button class="close-menu"><img src="/images/close.svg"></button>

@@ -1,0 +1,34 @@
+#contact button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: var(--brown);
+    color: var(--white);
+    margin-top: 20px;
+}
+#contact{
+    text-align:center;
+}
+#contact label{
+    color: var(--black);
+    font-size: 20px;
+    width: 200px;
+    display: inline-block;
+}
+#contact input{
+    color: var(--black);
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 3px;
+    border: 1px solid var(--black);
+}
+#contact div{
+    margin-bottom:20px;
+}
+.contact-form{
+    padding: 80px;
+    border: 1px solid #282a3a45;
+    border-radius: 20px;
+    width: max-content;
+    margin: auto;
+}

@@ -4,7 +4,7 @@ const Footer = `
             <div class="footer-inner">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <img src="/images/white-logo.png">
+                        <a href="/"><img src="/images/white-logo.png"></a>
                         <p class="logo-text">Ngopi</p>
                     </div>
                     <div class="footer-about-text">

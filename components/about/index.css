@@ -1,0 +1,81 @@
+.about-title{
+    text-align:center;
+}
+.about-title span{
+    font-size: 20px;
+    color:var(--black);
+    opacity: 56%;
+}
+.about-title p{
+    font-size:36px ;
+    color:var(--black);
+    font-family: 'PlayFairDisplay';
+    margin: 0;
+    margin-bottom:40px;
+}
+.about-inner a{
+    font-family: 'PlayFairDisplaySC';
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--brown);
+    border-radius: 32px 0;
+    color: var(--white);
+    padding: 6px 60px 10px 30px;
+    display: block;
+    width: max-content;
+    margin: auto;
+    margin-top:24px;
+    margin-bottom:40px;
+    position: relative;
+}
+.about-inner a img{
+    width: 22px;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+}
+.about-inner{
+    display:flex;
+    gap:40px;
+    flex:1;
+}
+.about-inner .text{
+    flex:1;
+}
+.about-inner .images{
+    display:flex;
+    gap:10px;
+    flex:1;
+}
+.about-inner .images img{
+    width:100%;
+}
+.about-inner p{
+    font-size: 20px;
+}
+.about-inner .images:first-child{
+    margin-top:40px;
+}
+@media screen and (max-width: 991px) {
+    .about-inner .images{
+        display:none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .about-inner a{
+        font-size:16px;
+    }
+    .about-inner img{
+        width: 18px;
+    }
+}
+@media screen and (max-width: 575px) {
+    
+    .about-inner a img {
+        right: 26px;
+    }
+    .about-inner  a{
+        padding-right:50px;
+    }
+}
