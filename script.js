@@ -18,3 +18,5 @@ burger.addEventListener('click',()=>{
 close.addEventListener('click',()=>{
     menu.classList.remove('show');
 });
+
+
