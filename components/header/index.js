@@ -15,7 +15,7 @@ const Header =`
             </ul>
             <div class="header-left">
                 <button class="search"><img src="/images/search.png"></button>
-                <button class="shop"><img src="/images/shop.png"></button>
+                <button class="shop"><img src="/images/shop.png"><span class="cart-count"></span></button>
                 <button class="burger"><img src="/images/menu.svg"></button>
             </div>
         </div>
