@@ -84,3 +84,8 @@
         display: block;
     }
 }
+@media screen and (max-width: 575px) {
+    .header-container{
+        padding:16px 20px;
+    }
+}
