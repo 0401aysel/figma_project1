@@ -67,16 +67,12 @@
         left: 0;
         width: 100%;
         background: var(--black);
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: 0.3s ease;
         padding: 50px 20px 30px 20px;
         box-sizing: border-box;
-        display: inline;
+        display: none;
     }
     .menu.show {
-        transform: translateY(0);
-        opacity: 1;
+        display: block;
     }
     .menu.show a{
         color: white;

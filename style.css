@@ -40,3 +40,114 @@ body{
 .inner-container{
     padding:80px;
 }
+.explore .images{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.explore .images img{
+    width:100%;
+}
+.explore div{
+    flex:1;
+}
+.explore .images div{
+    padding:5px;
+}
+.explore .radius1 img{
+    border-radius:0px 80px;
+}
+.explore .radius2 img{
+    border-radius:80px 0;
+}
+.explore h1{
+    font-family: 'PlayFairDisplay';
+    max-width: 600px;
+    font-weight: 100;
+    margin:auto;
+    padding-bottom: 16px;
+}
+.explore{
+    text-align: center;
+}
+.explore p{
+    font-size: 20px;
+    max-width: 573px;
+    margin: auto;
+}
+.explore a{
+    font-family: 'PlayFairDisplaySC';
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--brown);
+    border-radius: 32px 0;
+    color: var(--white);
+    padding: 6px 60px 10px 30px;
+    display: block;
+    width: max-content;
+    margin: auto;
+    margin-top:24px;
+    margin-bottom:40px;
+    position: relative;
+}
+.explore a img{
+    width: 22px;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+}
+@media screen and (min-width: 992px) {
+    .explore h1{
+        font-size: 56px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .explore h1{
+        font-size: 46px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .explore .radius1 img{
+        border-radius:0px 40px;
+    }
+    .explore .radius2 img{
+        border-radius:40px 0;
+    }
+    .explore h1 {
+        font-size: 36px;
+    }
+    .explore p {
+        font-size: 18px;
+    }
+    .explore a{
+        font-size:16px;
+    }
+    .explore a img{
+        width: 18px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .explore .radius1 img{
+        border-radius:0px 20px;
+    }
+    .explore .radius2 img{
+        border-radius:20px 0;
+    }
+    .explore .images div {
+        padding: 2px;
+    }
+    .explore h1 {
+        font-size: 24px;
+    }
+    .explore p {
+        font-size: 16px;
+    }
+    .explore a img {
+        right: 26px;
+    }
+    .explore a{
+        padding-right:50px;
+    }
+}

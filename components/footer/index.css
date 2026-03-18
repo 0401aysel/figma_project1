@@ -111,7 +111,7 @@ footer{
 }
 
 @media screen and (max-width: 991px) {
-   .inner-container {
+    .inner-container {
         padding: 30px;
     }
 }
