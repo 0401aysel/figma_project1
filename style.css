@@ -206,6 +206,9 @@ input:focus-visible{
     color: var(--black);
     margin: 10px 0;
 }
+.slider-item a{
+    text-decoration: none;
+}
 .rate{
     display: flex;
     align-items: center;
