@@ -12,19 +12,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:16px 80px;
+    padding:16px 60px;
 }
 .header-left img{
     width:24px;
 }
-.menu{
+#header{
+    position: sticky;
+    top:0;
+    background: white;
+    z-index:2;
+}
+.menu ul{
     list-style: none;
     padding: 0;
     display:flex;
     gap:20px;
 }
 .menu a{
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Inter';
     text-decoration: none;
     color: var(--black);
@@ -57,6 +63,7 @@
     margin-left: -12px;
     color: var(--white);
 }
+
 @media screen and (max-width: 991px) {
     .header-container{
         padding:16px 30px;
@@ -76,12 +83,23 @@
         left: 0;
         width: 100%;
         background: var(--black);
-        padding: 50px 20px 30px 20px;
         box-sizing: border-box;
-        display: none;
+        display: inline-block;
+        opacity: 0;
+        height: 0;
+        z-index:-1;
+        transition: all 0.3s linear;
     }
     .menu.show {
-        display: block;
+        opacity: 1;
+        z-index:2;
+        height: max-content;
+    }
+    .menu ul{
+        display: inline-block;
+        padding: 30px 40px 30px 40px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .menu.show a{
         color: white;

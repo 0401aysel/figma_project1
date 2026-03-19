@@ -94,6 +94,7 @@ footer{
     border: none;
     box-sizing: border-box;
     padding-left:50px;
+    color:var(--white);
 }
 .subscribe-form button{
     border: none;
@@ -109,7 +110,11 @@ footer{
     font-family: 'Poppins';
     font-size: 16px;
 }
+.mail-error{
+    color:var(--white);
+    font-size: 13px;
 
+}
 @media screen and (max-width: 991px) {
     .inner-container {
         padding: 30px;

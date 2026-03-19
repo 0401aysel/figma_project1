@@ -14,16 +14,23 @@
     font-size: 20px;
     width: 200px;
     display: inline-block;
+    text-align: left;
+    text-transform: capitalize;
 }
 #contact input{
     color: var(--black);
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px 30px;
     border-radius: 3px;
     border: 1px solid var(--black);
 }
 #contact div{
     margin-bottom:20px;
+}
+.contact-form div p{
+    color:var(--brown);
+    text-align: right;
+    font-size: 13px;;
 }
 .contact-form{
     padding: 80px;

@@ -65,8 +65,9 @@ const Footer = `
                         <h3>Subscribe</h3>
                         <form class="subscribe-form">
                             <label for="mail"><img src="/images/mail.png"></label>
-                            <input  class="subscibe-mail" name="mail" placeholder="name@domain.com"/>
-                            <button>Send</button>
+                            <input  id ="mail" class="subscibe-mail" name="mail" placeholder="name@domain.com"/>
+                            <button type="submit">Send</button>
+                            <p class="mail-error"></p>
                         </form>
                     </div>
                 </div>

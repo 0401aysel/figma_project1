@@ -1,6 +1,5 @@
 let sliderLoad = document.querySelectorAll('.coffee-slider');
 let buttons = document.querySelectorAll('.product-types button');
-const latte = document.querySelector(".latte");
 let addToBTN =document.querySelectorAll('.add-to-cart');
 let shop = document.querySelector('.cart-count');
 
@@ -19,51 +18,7 @@ buttons.forEach(elem => {
 
         let sliderElem = document.querySelector(sliderItem);
         sliderElem.classList.add('active');
-
-        let index = 0;
-        let itemWidth = sliderElem.querySelector('.slider-item').offsetWidth;
-        let slider = sliderElem.querySelector(".slider-items");
-        let dots = sliderElem.querySelectorAll('.slider-dots span');
-
-        function slideNext(){
-            index++;
-
-            if (index == dots.length) {
-                index = 0;
-            }
-            updateSlider();
-        }
-
-        function slidePrev(){
-            if (index > 0) {
-                index--;
-                updateSlider();
-            }
-        }
-
-        function updateSlider() {
-            handleDot(index);
-            slider.style.transform = `translateX(-${index * itemWidth}px)`;
-        }
-        dots.forEach(dot => {
-            dot.addEventListener('click',()=>{
-                index = dot.dataset.index;
-                updateSlider();
-            });
-        });
-
-        function handleDot(index){
-            dots.forEach(dot => {
-                dot.classList.remove('active');
-                if(dot.dataset.index == index){
-                    dot.classList.add('active');
-                }
-            });
-
-        }
-        setInterval(slideNext,4000);
-
-            });
+    });
 });
 
 addToBTN.forEach( button=>{
@@ -98,4 +53,3 @@ addToBTN.forEach( button=>{
     });
 });
 
-latte.click();
